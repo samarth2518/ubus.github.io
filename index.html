@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <link rel="icon" type="image/x-icon" href="https://ubus.chitkara.edu.in//student/images/fevicon.svg">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" media="all" href="https://ubus.chitkara.edu.in//student/css/custom.css?ver=122600" />
+    <link rel="stylesheet" type="text/css" media="all" href="https://ubus.chitkara.edu.in//student/css/responsive.css" />
+	
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<script defer="defer" src="https://ubus.chitkara.edu.in//js/functions.js?ver=122600"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <title>UBus Management</title>
+    <title>UBus Management</title>
+    <script>
+        // Function to handle form submission
+        function handleSubmit(event) {
+            event.preventDefault(); // Prevent the default form submission
+            // Redirect to studentdashboard.html after form submission
+            window.location.href = 'studentdashboard.html';
+        }
+    </script>
+</head>
+
+<body>
+    <div class="main">
+        <div class="login">
+            <h1>U</h1>
+            <h2>BUS</h2>
+            <span>Sign in to U-Bus</span>
+
+            <form action="studentdashboard.html" name="userregistration" autocomplete="off" method="post"
+                accept-charset="utf-8" onsubmit="handleSubmit(event)">
+                <!-- Login Form -->
+                <input type="hidden" readonly="readonly" name="token_response" id="token_response">
+                <div class="login-form">
+                    <div class="input-box">
+                        <div class="form-group">
+                            <img src="https://ubus.chitkara.edu.in//student/images/user-icon.svg" alt="Icon" />
+                            <input type="text" autocomplete="off" name="username" placeholder="Username"
+                                maxlength="20" />
+                        </div>
+                    </div>
+                    <div class="input-box">
+                        <div class="form-group">
+                            <img src="https://ubus.chitkara.edu.in//student/images/lock-icon.svg" alt="Icon" />
+                            <input autocomplete="off" type="password" name="password" placeholder="Password"
+                                maxlength="20" />
+                        </div>
+                    </div>
+                    <input type="submit" name="insert" value="Sign In"
+                        class="form-button btn btn-success btn-lg btn-block"
+                        style="width: 326px; height: 60px;background: #E3000F;border-radius: 6px;font-weight: 600;font-size: 16px;line-height: 24px;color: #ffffff;display: flex;align-items: center;justify-content: center;border: 1px solid #E3000F;cursor: pointer;" />
+                    <div class="email-text">
+                        <p style="font-size:11px;">Questions? Email us at </p>
+                        <a style="font-size:11px;" href="mailto:ubus@chitkara.edu.in"
+                            target="_blank">ubus@chitkara.edu.in</a>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
